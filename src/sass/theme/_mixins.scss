@@ -5,3 +5,40 @@
 @mixin poppins {
     font-family: 'Poppins', sans-serif;
 }
+
+@mixin flex-height {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+@mixin default-btn {
+    background-color: none;
+    padding: 10px 18px;
+    display: inline-block;
+    transition: 0.2s all;
+    border: 2px solid $pink;
+    color: $pink;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: normal;
+    width: 180px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    @media (max-width: 767px) {
+        padding: 6px 13px;
+        font-size: 16px;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color:  darken($pink, 5%);
+        border: 2px solid darken($pink, 5%); 
+    }
+}
+
+.default-btn {
+    @include default-btn;
+}

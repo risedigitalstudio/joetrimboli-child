@@ -1,0 +1,46 @@
+.home-hero {
+    background-image: url(../img/home-hero.png);
+    background-size: cover;
+    background-position: center;
+    @include flex-height;
+    height: 720px;
+    .home-hero-inner {
+        color: $white;
+        img.hello {
+            width: 300px;
+            margin: 15px 0 30px;
+        }
+    }
+}
+
+.blk-sep {
+    margin: 30px auto;
+    display: block;
+}
+
+.home-intro {
+    text-align: center;
+    h3 {
+        font-family: "Bebas Neue", Sans-serif;
+        font-size: 28px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: $pink;
+    }
+    .quote {
+        margin: 55px auto;
+        display: block;
+    }
+    h1 {
+        color: $black;
+        font-size: 7rem;
+        line-height: 6.5rem;
+        text-align: center;
+    }
+}
+
+.home-img {
+    margin: 35px auto 10px;
+    max-width: 700px;
+    display: block;
+}

@@ -3,21 +3,38 @@ $white: #fff;
 $pink: #ec008c;
 $blue: #03aeef;
 $lightGrey: #e7e7e7;
+$medGrey: #818080;
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Poppins:wght@300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
+    font-weight: 300;
     strong {
-        font-weight: 500;
+        font-weight: 600;
     }
+}
+
+p {
+    margin-bottom: 1.75rem;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bebas Neue', cursive;
 }
 
+.sec-pad {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.caption {
+    text-align: center;
+    color: $medGrey;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
