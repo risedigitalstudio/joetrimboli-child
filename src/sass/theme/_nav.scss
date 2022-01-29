@@ -1,0 +1,27 @@
+.custom-logo-link {
+    width: 155px;
+    img {
+        width: 100%;
+    }
+}
+
+.navbar-expand-md .navbar-nav .menu-item {
+    padding: 0.5rem 1rem;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    @include poppins;
+    text-transform: uppercase;
+    color: $black;
+    padding: 0 0;
+    font-size: 12px;
+    letter-spacing: -0.4px;
+    font-weight: 500;
+    border-bottom: 2px solid $white;
+    &:hover {
+        border-bottom: 2px solid $pink;
+    }
+}
+
+.navbar-expand-md .navbar-nav .current_page_item .nav-link {
+    border-bottom: 2px solid $pink;
+}
