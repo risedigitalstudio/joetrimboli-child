@@ -26,6 +26,14 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bebas Neue', cursive;
 }
 
+h1 { font-size: 3rem; }
+h2 { 
+    font-size: 2.6rem; 
+    margin-bottom: 1.6rem;
+}
+h3 { font-size: 2.2rem; }
+h4 { font-size: 2rem; }
+
 .sec-pad {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -37,4 +45,40 @@ h1, h2, h3, h4, h5 {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 35px;
+}
+
+.light-bg {
+    background: $lightGrey;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.quote-wrap {
+    border-top: 1.5px solid $black;
+    border-bottom: 1.5px solid $black;
+    padding: 30px 0;
+    margin-bottom: 25px;
+    &.center-quote {
+        max-width: 500px;
+        text-align: left;
+        margin: 25px auto;
+        .quote-img-side img {
+            width: 70px;
+            position: relative;
+            top: -10px;
+        }
+    }
+    .quote-img-side {
+        float: left;
+        margin-right: 20px;
+        img {width: 100px;}
+    }
+    .quote-side {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 29px;
+        line-height: 32px;
+        margin: 0;
+    }
 }

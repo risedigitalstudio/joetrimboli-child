@@ -44,3 +44,69 @@
     max-width: 700px;
     display: block;
 }
+
+.join-cta-zoom {
+    background-image: url(../img/zoom-bg.png);
+    background-size: cover;
+    background-position: left center;
+    text-align: center;
+    color: $white;
+    @include flex-height;
+    img.wuc-logo-cta {
+        width: 290px;
+        margin-bottom: 45px;
+    }
+}
+
+.home-cta-inner {
+    background: rgba(0,0,0,0.6);
+    padding: 45px 32px;
+}
+
+.home-speaking {
+    background: $black;
+    color: $white;
+    text-align: center;
+}
+
+.home-events {
+    background-image: url(../img/home-events.jpeg);
+    background-size: cover;
+    background-position: left -180px;
+    text-align: center;
+    min-height: 600px;
+    color: $white;
+    @include flex-height;
+    @include media-breakpoint-down(md) {
+        background-position: center center;
+    }
+}
+
+.home-get-on-the-list {
+    h2 {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+    p {
+        text-align: center;
+    }
+    background-image: url(../img/get-on-list-bg.png);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: $white;
+    min-height: 800px;
+    @include flex-height;
+    #mc_embed_signup .button {
+        @include default-btn;
+        background-color: rgba(0,0,0,0) !important;
+        text-align: center;
+        margin: 25px auto 0;
+        display: block;
+        height: 45px;
+        border-radius: 0;
+        &:hover {
+            background-color: $pink !important;
+        }
+    }
+}

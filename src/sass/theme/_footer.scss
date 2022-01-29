@@ -1,0 +1,30 @@
+.main-footer {
+    background: $lightGrey;
+    p {
+        margin: 0;
+        color: $medGrey;
+    }
+}
+
+.footer-social {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    display: block;
+    float: right;
+    li {
+        float: left;
+        a {
+            i {
+                color: $medGrey;
+                font-size: 25px;
+                margin: 0 15px;
+            }
+            &:hover {
+                i {
+                    color: $pink;
+                }
+            }
+        }
+    }
+}

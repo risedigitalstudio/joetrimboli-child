@@ -69,12 +69,83 @@ get_header();
 
                 <p>What was the secret to finding genuine happiness and fulfillment? And why do some people repeatedly struggle while others thrive in the most challenging circumstances? What did they have that I didn’t?</p>
                 
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/joe-car.jpeg" class="home-img">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/joe-car.jpeg" class="home-img mb-5">
+                
+                <p>After finally gaining some knowledge and understanding, I used this newfound awareness to completely change my life. I’ve become a dedicated student of human potential and growth, and am completely obsessed with sharing it with the world. I took to studying universal laws, the subconscious mind and success principles taken from the most impactful, relevant books, and applied them to my own personal and professional life. I also invested in myself through coaching and other programs. This period of self-reflection uncovered everything I had done wrong in my life and once I became aware of those things, everything changed.</p>
+
+                <p>With a positive mindset and an understanding of certain laws and principles, every aspect of my life improved and I realized that if I could do it, anyone could do it! I was no longer a skeptic. I no longer believed this was only possible for everyone else, I knew it was possible for me too. I developed an unwavering faith that was based on understanding and knew I wanted to share it with people everywhere.</p>
+
+                <p>While I never knew how I would reach those who needed to hear these lessons, I trusted that if it was meant to be, the Universe would figure it out. All I had to do is keep walking through the doors that seemed to keep opening up for me. And that’s just what I did. Eventually, the “how” showed up as the Wake Up Call™. The more I walked through these doors, the more I uncovered my purpose: To help people all over the world create the life they want and unleash their fullest potential.</p>
+                
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/joe-event-home.jpeg" class="home-img">
+                <p class="caption">Mortgage Centre Canada and Mortgage Architects National Conference in Cancun, Mexico</p>
+                
+                <p>I realized I had a gift. By making myself vulnerable, people could relate and learn these lessons easily and effectively. I promised I would continue unwrapping these gifts and sharing them with the world. </p>
+
+                <p>And that’s exactly what I’m doing…</p>
+                
+                <p><a href="<?php echo site_url();?>/about-joe" class="default-btn">Joe's Story</a></p>
             </div>
         </div>
     </div>
 </section>
 
+
+<?php get_template_part( 'global-templates/join-wuc-cta' ); ?>
+
+
+<section class="home-speaking sec-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Speaking Engagements</h2>
+                <p>Looking for an inspirational speaker at your next conference or event? Arm your team with powerful workshops, professional development tools and breakout sessions to improve work ethic and habits. Book Joe for your next digital or in-person event.</p>
+                <div class="btn-wrap">
+                    <a href="<?php echo site_url();?>/speaking-engagements" class="default-btn">Learn More</a>
+                    <a href="mailto:lori@joetrimboli.com" class="default-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<section class="home-events sec-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-6">
+                <div class="home-cta-inner">
+                    <h2>Events</h2>
+                    <p>Interested in recent or upcoming events?<br class="desktop">Find out if Joe’s coming to a location near you.</p>
+                    <div class="btn-wrap">
+                        <a href="<?php echo site_url();?>/events" class="default-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<section class="home-get-on-the-list sec-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <?php get_template_part( 'global-templates/mailchimp-sign-up' ); ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="insta-block sec-pad">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p>insta goes here</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php
 get_footer();

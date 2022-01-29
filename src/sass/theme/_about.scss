@@ -1,0 +1,15 @@
+.about-hero {
+    background-image: url(../img/about-joe-bg.png);
+    background-size: cover;
+    background-position: center -100px;
+    @include flex-height;
+    height: 600px;
+    h1 {
+        color: $white;
+        font-size: 80px;
+    }
+}
+
+.about-intro {
+    text-align: center;
+}
