@@ -1,0 +1,20 @@
+.wuc-hero {
+    background-image: url(../img/joe-wuc.png);
+    background-size: cover;
+    background-position: center center;
+    @include flex-height;
+    height: 720px;
+    
+    .wuc-tagline {
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+        border-top: 1.5px solid $black;
+        padding-top: 25px;
+        text-transform: uppercase;
+        letter-spacing: .4px;
+        font-weight: 500;
+    }
+}
+
+

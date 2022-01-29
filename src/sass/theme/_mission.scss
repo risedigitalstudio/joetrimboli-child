@@ -1,0 +1,21 @@
+.mission-hero {
+    background-image: url(../img/joe-mission.jpeg);
+    background-size: cover;
+    background-position: center -100px;
+    @include flex-height;
+    height: 720px;
+    h1 {
+        color: $white;
+        font-size: 80px;
+    }
+}
+
+
+.mission-info {
+    text-align: center;
+    .pi {
+        margin: 0 auto 40px;
+        display: block;
+        width: 60px;
+    }
+}

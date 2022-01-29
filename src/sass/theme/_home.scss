@@ -110,3 +110,16 @@
         }
     }
 }
+
+.home-videos {
+    background: $lightGrey;
+    text-align: center;
+    .arrows-home-videos {
+        margin-top: 25px;
+    }
+}
+.home-video-slider {
+    .video {
+        margin: 0 15px;
+    }
+}

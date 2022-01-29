@@ -118,5 +118,19 @@ get_header();
 
 <?php get_template_part( 'global-templates/join-wuc-cta' ); ?>
 
+<?php get_template_part( 'global-templates/instagram' ); ?>
+
+
+<section class="home-get-on-the-list sec-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <?php get_template_part( 'global-templates/mailchimp-sign-up' ); ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <?php
 get_footer();

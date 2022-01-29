@@ -15267,6 +15267,18 @@ h4 {
   background-color: #ec008c !important;
 }
 
+.home-videos {
+  background: #e7e7e7;
+  text-align: center;
+}
+.home-videos .arrows-home-videos {
+  margin-top: 25px;
+}
+
+.home-video-slider .video {
+  margin: 0 15px;
+}
+
 .about-hero {
   background-image: url(../img/about-joe-bg.png);
   background-size: cover;
@@ -15284,6 +15296,77 @@ h4 {
 
 .about-intro {
   text-align: center;
+}
+
+.video {
+  max-width: 100%;
+}
+
+.video:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mission-hero {
+  background-image: url(../img/joe-mission.jpeg);
+  background-size: cover;
+  background-position: center -100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  height: 720px;
+}
+.mission-hero h1 {
+  color: #fff;
+  font-size: 80px;
+}
+
+.mission-info {
+  text-align: center;
+}
+.mission-info .pi {
+  margin: 0 auto 40px;
+  display: block;
+  width: 60px;
+}
+
+.wuc-hero {
+  background-image: url(../img/joe-wuc.png);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  height: 720px;
+}
+.wuc-hero .wuc-tagline {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1.5px solid #000;
+  padding-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-weight: 500;
 }
 
 .main-footer {

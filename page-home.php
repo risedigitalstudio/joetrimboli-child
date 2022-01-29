@@ -137,15 +137,56 @@ get_header();
     </div>
 </section>
 
-<section class="insta-block sec-pad">
-    <div class="container-fluid">
+<section class="home-videos sec-pad">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>insta goes here</p>
+               <h2>Vibrate Higher</h2>
+               <p>Mental habits that will help you reach your greatest potential.</p>
+            </div>
+        </div>
+        <div class="row home-video-slider">
+            <?php
+            if( have_rows('videos') ):
+
+                while( have_rows('videos') ) : the_row();
+
+                    $videoCode = get_sub_field('youtube_embed_code');
+                    ?>
+                    <div class="video">
+                        <div class="videoWrapper">
+                            <?php echo $videoCode; ?>
+                        </div>
+                    </div>
+                    <?php
+
+                endwhile;
+
+            else :
+            endif;
+            ?>
+        </div>
+        <div class="arrows-home-videos">
+           <div class="line"></div>
+            <div class="arrows-inner">
+                <span class="prev-videos">
+                    <svg width="30" height="19" viewBox="0 0 45 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 1L2.00001 17L18 33" stroke="black" stroke-width="2.5"/>
+                    </svg>
+               </span>
+                <span class="next-videos">
+                    <svg width="30" height="19" viewBox="0 0 45 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.5303 33.5303L26.4697 32.4696L41.9393 16.9999L26.4697 1.53027L27.5303 0.469609L44.0606 16.9999L27.5303 33.5303Z" stroke="black"/>
+                    </svg>
+                </span>
             </div>
         </div>
     </div>
 </section>
+
+
+<?php get_template_part( 'global-templates/instagram' ); ?>
+
 
 <?php
 get_footer();
