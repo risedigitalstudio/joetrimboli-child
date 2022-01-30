@@ -15369,6 +15369,29 @@ h4 {
   font-weight: 500;
 }
 
+.wuc-intro {
+  text-align: center;
+}
+.wuc-intro ul:first-of-type {
+  margin-right: 20px;
+}
+
+ul.checks {
+  text-align: left;
+  list-style-image: url(../img/check.png);
+  padding: 0;
+}
+ul.checks li {
+  margin-bottom: 8px;
+}
+
+.wuc-desc {
+  background: #e7e7e7;
+}
+.wuc-desc .default-btn {
+  margin-top: 0;
+}
+
 .main-footer {
   background: #e7e7e7;
 }
