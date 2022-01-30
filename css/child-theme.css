@@ -15392,6 +15392,135 @@ ul.checks li {
   margin-top: 0;
 }
 
+.wuc-testimonials {
+  text-align: center;
+}
+
+.wuc-testimonial {
+  text-align: center;
+}
+.wuc-testimonial img.wuc-testimonial-img {
+  display: block;
+  border-radius: 100%;
+  float: left;
+  width: 150px;
+  margin-right: 25px;
+}
+.wuc-testimonial .testimonial-info {
+  text-align: left;
+}
+.wuc-testimonial h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 0 0;
+  color: #03aeef;
+}
+
+.arrows-wuc-testimonials {
+  position: relative;
+  top: -140px;
+}
+
+.arrows-wuc-testimonials .arrows-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+span.prev-wuc-testimonial.slick-arrow {
+  position: relative;
+  left: -55px;
+}
+
+span.next-wuc-testimonial.slick-arrow {
+  position: relative;
+  right: -55px;
+}
+
+.wuc-test-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.wuc-two-lists {
+  background: #e7e7e7;
+}
+
+.plus {
+  text-align: center;
+}
+.plus h4 {
+  margin-top: 55px;
+  color: #ec008c;
+}
+
+.wake-me-up .default-btn {
+  display: block;
+  width: 300px;
+  font-size: 26px;
+  margin: 0 auto;
+}
+
+.testimonials-hero {
+  background-image: url(../img/joe-testimonials.png);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  height: 720px;
+  position: relative;
+}
+.testimonials-hero h1 {
+  color: #fff;
+}
+.testimonials-hero::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #005da0;
+  background: linear-gradient(297deg, rgba(0, 93, 160, 0) 19%, rgba(0, 0, 0, 0.82) 100%);
+}
+
+.testimonials-intro {
+  text-align: center;
+}
+
+.testimonials-wrap {
+  background: #e7e7e7;
+}
+.testimonials-wrap img.member {
+  border-radius: 100%;
+  border: 3px solid #ec008c;
+}
+.testimonials-wrap h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.one-testimonial {
+  border-bottom: 1.5px solid #fff;
+}
+
+.rel {
+  position: relative;
+}
+
+.testimonial-quote {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  display: block;
+}
+
+.video-member-name {
+  background: #e7e7e7;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
 .main-footer {
   background: #e7e7e7;
 }

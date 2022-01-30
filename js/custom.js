@@ -7,10 +7,20 @@ $(document).ready(function() {
           slidesToScroll: 1,    
           autoplay: false,
           infinite: true,
-          autoplaySpeed: 10000,
           arrows: true,
           prevArrow: $('.prev-videos'),
           nextArrow: $('.next-videos') 
+      });
+        
+      $('.wuc-testimonial-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          infinite: true,
+          arrows: true,
+          prevArrow: $('.prev-wuc-testimonial'),
+          nextArrow: $('.next-wuc-testimonial'),
+          dots: true
       });
     
 

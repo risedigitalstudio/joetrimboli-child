@@ -1,0 +1,58 @@
+.testimonials-hero {
+    background-image: url(../img/joe-testimonials.png);
+    background-size: cover;
+    background-position: center center;
+    @include flex-height;
+    height: 720px;
+    position: relative;
+    h1 {
+        color: $white;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(0,93,160);
+        background: linear-gradient(297deg, rgba(0,93,160,0) 19%, rgba(0,0,0,0.82) 100%);
+    }
+}
+
+.testimonials-intro {
+    text-align: center;
+}
+
+.testimonials-wrap {
+    background: $lightGrey;
+    img.member {
+        border-radius: 100%;
+        border: 3px solid $pink;
+    }
+    h3 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+}
+
+.one-testimonial {
+    border-bottom: 1.5px solid $white;
+}
+
+.rel {
+    position: relative;
+}
+
+.testimonial-quote {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    display: block;
+}
+
+.video-member-name {
+    background: $lightGrey;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}

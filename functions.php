@@ -87,3 +87,56 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
+
+function zmExcerpt($whichPostID=false, $limit=80, $stripShortCodes=true, $displayReadMoreLink=false, $readMoreText=false, $beforeMarkup="", $afterMarkup="", $ellipsis = "...") {
+	$limit = intval($limit);//in case we get sent a string
+	if ($whichPostID) {
+		$somePostID = $whichPostID;
+		$somePost = get_post($whichPostID);
+	} else {
+		//if we aren't passed a post id, use global post by default
+		global $post;
+		$somePost = $post;
+		$somePostID = $somePost->ID;
+	}
+	//$someContent = "#... zmExcerpt ... #somePostID=={$somePostID}";
+	$someContent = "";
+	//if($post->post_excerpt) {
+	if (has_excerpt($somePostID)) {
+		//echo("has_excerpt");
+		//$content = strip_tags($post->post_excerpt);
+		if ($stripShortCodes) {
+			$someContent .= strip_shortcodes( strip_tags($somePost->post_excerpt) );
+		} else {
+			$someContent .= strip_tags($somePost->post_excerpt);
+		}
+		//$content = strip_tags(strip_shortcodes( get_the_excerpt());
+	} else {
+		//echo("no has_excerpt");
+		if ($stripShortCodes) {
+			//echo("get_the_content({$somePostID})==".get_the_content($somePostID) . "...;");//why does this appear to return nothing?
+			//echo();
+			$someContent .= strip_shortcodes( strip_tags($somePost->post_content));
+		} else {
+			$someContent .= strip_tags($somePost->post_content);
+		}
+	}
+	// Find the last space (between words we're assuming) after the max length.
+	if (strlen($someContent) > $limit) {
+		 $last_space = strrpos( substr( strip_tags($someContent), 0, $limit), ' ');
+		// Trim
+		$trimmed_text = substr(strip_tags($someContent), 0, $last_space);
+	} else {
+		$trimmed_text = $someContent;
+	}
+    if (!$readMoreText) {
+    	$readMoreText = "Read More &#187;";
+    }
+    if ($displayReadMoreLink) {
+       return $beforeMarkup . $trimmed_text . $ellipsis .  '<a class="sr_readmore readmore" href="'. esc_url(get_permalink($somePost->ID)) . '" title="Read '.get_the_title($somePost->ID).'">'.$readMoreText.'</a>' . $afterMarkup;
+    } else {
+       return $beforeMarkup . $trimmed_text . $ellipsis . $afterMarkup;
+    }
+}

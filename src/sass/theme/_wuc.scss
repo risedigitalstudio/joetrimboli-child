@@ -41,3 +41,74 @@ ul.checks {
         margin-top: 0;
     }
 }
+
+.wuc-testimonials {
+    text-align: center;
+}
+
+.wuc-testimonial {
+    text-align: center;
+    img.wuc-testimonial-img {
+        display: block;
+        border-radius: 100%;
+        float: left;
+        width: 150px;
+        margin-right: 25px;
+    }
+
+    .testimonial-info {
+        text-align: left;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin: 20px 0 0 0;
+        color: $blue;
+    }
+}
+
+.arrows-wuc-testimonials {
+    position: relative;
+    top: -140px;
+}
+.arrows-wuc-testimonials .arrows-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.prev-wuc-testimonial.slick-arrow {
+    position: relative;
+    left: -55px;
+}
+
+span.next-wuc-testimonial.slick-arrow {
+    position: relative;
+    right: -55px;
+}
+
+.wuc-test-btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.wuc-two-lists {
+    background: $lightGrey;
+}
+
+.plus {
+    text-align: center;
+    h4 {
+        margin-top: 55px;
+        color: $pink;
+    }
+}
+
+.wake-me-up {
+    .default-btn {
+        display: block;
+        width: 300px;
+        font-size: 26px;
+        margin: 0 auto;
+    }
+}
