@@ -25,3 +25,28 @@
 .navbar-expand-md .navbar-nav .current_page_item .nav-link {
     border-bottom: 2px solid $pink;
 }
+
+
+//login and register
+.navbar-expand-md .navbar-nav .login-btn, .navbar-expand-md .navbar-nav .register-btn {
+    padding: 0 1rem;
+    .nav-link {
+        @include nav-btn;
+        &:hover {
+            border-bottom: none;
+        }
+    }
+}
+
+.navbar-expand-md .navbar-nav .register-btn{
+    padding: 0 1rem 0 0;
+}
+
+.navbar-expand-md .navbar-nav .register-btn .nav-link {
+    background-color: $pink;
+    color: $white;
+    &:hover {
+        border-bottom: none;
+        background-color: darken($pink, 10%);
+    }
+}

@@ -40,7 +40,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
-            <div class="container">
+            <div class="container-fluid">
 
                 <!-- Your site title as branding in the menu -->
                 <a href="<?php echo site_url();?>" class="navbar-brand custom-logo-link">
