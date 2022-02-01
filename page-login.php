@@ -17,11 +17,10 @@ get_header();
 
 ?>
 
-<section class="page-wrap sec-pad">
+<section class="login-bg sec-pad">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-            login page here!
 				<?php
 				while ( have_posts() ) {
 					the_post();

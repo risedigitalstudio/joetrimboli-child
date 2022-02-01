@@ -140,3 +140,53 @@ function zmExcerpt($whichPostID=false, $limit=80, $stripShortCodes=true, $displa
        return $beforeMarkup . $trimmed_text . $ellipsis . $afterMarkup;
     }
 }
+
+
+
+function mepr_add_some_tabs($user) {
+  ?>
+    <span class="mepr-nav-item member-area <?php MeprAccountHelper::active_nav('member-area'); ?>">
+      <!-- KEEPS THE USER ON THE ACCOUNT PAGE -->
+      <a href="<?php echo site_url();?>/account/?action=member-area">Member Area</a>
+    </span>
+    <span class="mepr-nav-item user-directory <?php MeprAccountHelper::active_nav('user-directory'); ?>">
+      <!-- KEEPS THE USER ON THE ACCOUNT PAGE -->
+      <a href="<?php echo site_url();?>/account/?action=user-directory">User Directory</a>
+    </span>
+
+  <?php
+}
+add_action('mepr_account_nav', 'mepr_add_some_tabs');
+
+
+function mepr_add_tabs_content($action) {
+
+  if($action == 'member-area'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+  ?>
+    <section class="members-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Member Area</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+  <?php
+  endif;  
+    
+if($action == 'user-directory'): //Update this 'premium-support' to match what you put above (?action=premium-support)
+  ?>
+    <section class="user-directory">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php echo do_shortcode('[DynamicUserDirectory]');?>
+                </div>
+            </div>
+        </div>
+    </section>
+  <?php
+  endif;
+}
+add_action('mepr_account_nav_content', 'mepr_add_tabs_content');

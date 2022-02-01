@@ -1,0 +1,24 @@
+.login-bg {
+    background-image: url(../img/about-joe-bg.png);
+    background-size: cover;
+    background-position: center -100px;
+    @include flex-height;
+    @include media-breakpoint-down(lg) {
+        background-position: center center;
+    }
+    article {
+        background: $white;
+        padding: 40px;
+    }
+}
+
+.button-primary {
+    @include default-btn;
+    background-color: $white;
+}
+
+.mepr-login-actions {
+    a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,55 @@
+.account-hero {
+    background-image: url(../img/joe-wuc.png);
+    background-size: cover;
+    background-position: center -70px;
+    @include flex-height;
+    min-height: 500px;
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 45px;
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+    @include media-breakpoint-down(lg) {
+        background-position: center center;
+    }
+}
+
+
+div#mepr-account-nav {
+    background-color: $pink;
+    height: 50px;
+    line-height: 50px;
+    .mepr-nav-item {
+        padding: 0 20px;
+        a {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 18px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &.mepr-active-nav-tab {
+            padding: 0 20px;
+            background: black;
+            position: relative;
+            line-height: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+    }
+}
+
+#mepr-account-welcome-message p {
+    font-weight: 600;
+    margin: 30px 0;
+}

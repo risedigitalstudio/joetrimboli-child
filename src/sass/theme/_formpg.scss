@@ -2,3 +2,54 @@
     @include default-btn;
     background-color: $white;
 }
+
+.mp_wrapper .mepr_price {
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 25px;
+    color: $blue;
+}
+
+
+.registration-bg {
+    background-image: url(../img/registration-bg.png);
+    background-size: cover;
+    background-position: center center;
+    @include media-breakpoint-down(lg) {
+        background-position: center center;
+    }
+    h1 {
+        font-size: 2.1rem;
+        margin-bottom: 25px;
+    }
+    article {
+        background: $white;
+        padding: 40px;
+    }
+}
+
+.memberpressproduct {
+    .mp_wrapper .mp-form-row.mepr_first_name {
+        width: 49% !important;
+        float: left;
+    }
+    .mp_wrapper .mp-form-row.mepr_last_name {
+        width: 49% !important;
+        float: right;
+    }
+
+    .mp_wrapper .mp-form-row.mepr_password {
+        width: 49% !important;
+        float: left;
+    }
+    .mp_wrapper .mp-form-row.mepr_password_confirm {
+        width: 49% !important;
+        float: right;
+    }
+}
+
+.mp_wrapper .mepr-form-has-errors, .mp_wrapper .cc-error, .mp_wrapper .mepr-validation-error {
+    font-size: 11px;
+    width: 100%;
+    padding-left: 0 !important;
+}

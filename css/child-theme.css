@@ -15013,6 +15013,10 @@ h4 {
   padding-bottom: 90px;
 }
 
+.sec-pad-bot {
+  padding-bottom: 90px;
+}
+
 .caption {
   text-align: center;
   color: #818080;
@@ -15674,6 +15678,167 @@ span.next-wuc-testimonial.slick-arrow {
   text-decoration: none;
   background-color: #d3007d;
   border: 2px solid #d3007d;
+}
+
+.mp_wrapper .mepr_price {
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 25px;
+  color: #03aeef;
+}
+
+.registration-bg {
+  background-image: url(../img/registration-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 1199.98px) {
+  .registration-bg {
+    background-position: center center;
+  }
+}
+.registration-bg h1 {
+  font-size: 2.1rem;
+  margin-bottom: 25px;
+}
+.registration-bg article {
+  background: #fff;
+  padding: 40px;
+}
+
+.memberpressproduct .mp_wrapper .mp-form-row.mepr_first_name {
+  width: 49% !important;
+  float: left;
+}
+.memberpressproduct .mp_wrapper .mp-form-row.mepr_last_name {
+  width: 49% !important;
+  float: right;
+}
+.memberpressproduct .mp_wrapper .mp-form-row.mepr_password {
+  width: 49% !important;
+  float: left;
+}
+.memberpressproduct .mp_wrapper .mp-form-row.mepr_password_confirm {
+  width: 49% !important;
+  float: right;
+}
+
+.mp_wrapper .mepr-form-has-errors, .mp_wrapper .cc-error, .mp_wrapper .mepr-validation-error {
+  font-size: 11px;
+  width: 100%;
+  padding-left: 0 !important;
+}
+
+.login-bg {
+  background-image: url(../img/about-joe-bg.png);
+  background-size: cover;
+  background-position: center -100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+@media (max-width: 1199.98px) {
+  .login-bg {
+    background-position: center center;
+  }
+}
+.login-bg article {
+  background: #fff;
+  padding: 40px;
+}
+
+.button-primary {
+  background-color: none;
+  padding: 10px 18px;
+  display: inline-block;
+  transition: 0.2s all;
+  border: 2px solid #ec008c;
+  color: #ec008c;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  width: 180px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .button-primary {
+    padding: 6px 13px;
+    font-size: 16px;
+  }
+}
+.button-primary:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d3007d;
+  border: 2px solid #d3007d;
+}
+
+.mepr-login-actions a {
+  font-size: 14px;
+}
+
+.account-hero {
+  background-image: url(../img/joe-wuc.png);
+  background-size: cover;
+  background-position: center -70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  min-height: 500px;
+}
+.account-hero img {
+  margin: 0 auto;
+  display: block;
+}
+.account-hero h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 45px;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+@media (max-width: 1199.98px) {
+  .account-hero {
+    background-position: center center;
+  }
+}
+
+div#mepr-account-nav {
+  background-color: #ec008c;
+  height: 50px;
+  line-height: 50px;
+}
+div#mepr-account-nav .mepr-nav-item {
+  padding: 0 20px;
+}
+div#mepr-account-nav .mepr-nav-item a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+div#mepr-account-nav .mepr-nav-item a:hover {
+  text-decoration: none;
+}
+div#mepr-account-nav .mepr-nav-item.mepr-active-nav-tab {
+  padding: 0 20px;
+  background: black;
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+#mepr-account-welcome-message p {
+  font-weight: 600;
+  margin: 30px 0;
 }
 
 .main-footer {
