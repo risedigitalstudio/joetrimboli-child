@@ -34,15 +34,14 @@
     &:hover {
         color: #fff;
         text-decoration: none;
-        background-color:  darken($pink, 5%);
-        border: 2px solid darken($pink, 5%); 
+        background-color: darken($pink, 5%);
+        border: 2px solid darken($pink, 5%);
     }
 }
 
 .default-btn {
     @include default-btn;
 }
-
 
 @mixin nav-btn {
     background-color: $lightGrey;

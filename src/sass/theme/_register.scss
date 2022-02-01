@@ -1,0 +1,38 @@
+.mepr-price-boxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mepr-price-box  {
+    background: $lightGrey;
+    width: 32%;
+    padding: 40px;
+    text-align: center;
+}
+
+.mepr-most-popular {
+    display: none;
+}
+
+.mepr-price-box-title {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.mepr-price-box-price {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.mepr-price-box-button a {
+    @include default-btn;
+}
+
+.type-memberpressgroup {
+    h1 {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+}

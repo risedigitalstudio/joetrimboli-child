@@ -15586,6 +15586,96 @@ span.next-wuc-testimonial.slick-arrow {
   line-height: 26px;
 }
 
+.mepr-price-boxes {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mepr-price-box {
+  background: #e7e7e7;
+  width: 32%;
+  padding: 40px;
+  text-align: center;
+}
+
+.mepr-most-popular {
+  display: none;
+}
+
+.mepr-price-box-title {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.mepr-price-box-price {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+.mepr-price-box-button a {
+  background-color: none;
+  padding: 10px 18px;
+  display: inline-block;
+  transition: 0.2s all;
+  border: 2px solid #ec008c;
+  color: #ec008c;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  width: 180px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .mepr-price-box-button a {
+    padding: 6px 13px;
+    font-size: 16px;
+  }
+}
+.mepr-price-box-button a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d3007d;
+  border: 2px solid #d3007d;
+}
+
+.type-memberpressgroup h1 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.mepr-submit {
+  background-color: none;
+  padding: 10px 18px;
+  display: inline-block;
+  transition: 0.2s all;
+  border: 2px solid #ec008c;
+  color: #ec008c;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  width: 180px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .mepr-submit {
+    padding: 6px 13px;
+    font-size: 16px;
+  }
+}
+.mepr-submit:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d3007d;
+  border: 2px solid #d3007d;
+}
+
 .main-footer {
   background: #e7e7e7;
 }
