@@ -37,6 +37,9 @@
         background-color: darken($pink, 5%);
         border: 2px solid darken($pink, 5%);
     }
+    &:disabled {
+        background-color: red;
+    }
 }
 
 .default-btn {

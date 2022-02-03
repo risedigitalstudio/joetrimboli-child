@@ -90,7 +90,7 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 
-function zmExcerpt($whichPostID=false, $limit=80, $stripShortCodes=true, $displayReadMoreLink=false, $readMoreText=false, $beforeMarkup="", $afterMarkup="", $ellipsis = "...") {
+function zmExcerpt($whichPostID=false, $limit=156, $stripShortCodes=true, $displayReadMoreLink=false, $readMoreText=false, $beforeMarkup="", $afterMarkup="", $ellipsis = "...") {
 	$limit = intval($limit);//in case we get sent a string
 	if ($whichPostID) {
 		$somePostID = $whichPostID;
@@ -143,6 +143,8 @@ function zmExcerpt($whichPostID=false, $limit=80, $stripShortCodes=true, $displa
 
 
 
+//Account section
+
 function mepr_add_some_tabs($user) {
   ?>
     <span class="mepr-nav-item member-area <?php MeprAccountHelper::active_nav('member-area'); ?>">
@@ -164,10 +166,48 @@ function mepr_add_tabs_content($action) {
   if($action == 'member-area'): //Update this 'premium-support' to match what you put above (?action=premium-support)
   ?>
     <section class="members-area">
-        <div class="container">
+        <div class="container chunk">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Member Area</h1>
+                    <h2>Zoom Links</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                   <p>5AM EASTERN STANDARD TIME</p>
+                    <a target="_blank" href="https://us02web.zoom.us/j/89052470508?pwd=V1ZuQjdNTTZXZzlzZkRwRkx0OGRhUT09#success" class="default-btn">Live Zoom Link</a>
+                </div>
+                <div class="col-md-6">
+                   <p>AUSTRALIAN CALL SUSPENDED UNTIL FURTHER NOTICE</p>
+                    <a target="_blank" href="https://us02web.zoom.us/j/83653422557?pwd=SHllU1NqOWsxYXR4akx2SmZ5UWRZQT09#success" class="default-btn">Live Zoom Link</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container chunk">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Current and Upcoming Books</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a target="_blank" href="https://docs.google.com/document/d/1trQIdblEMUZl19o_yfV_T6rDK6wiNf0PVoRUG-I-yFo/edit" class="default-btn">View</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container chunk">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Schedule</h2>
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/wuc-schedule.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a target="_blank" href="https://docs.google.com/document/d/1UOaPr_jgjBlTnO4O-L4ac6i4M1Vmj-R4NceIZ7cTIMA/edit" class="default-btn">Download Schedule &amp; Rules</a>
                 </div>
             </div>
         </div>

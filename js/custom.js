@@ -23,6 +23,19 @@ $(document).ready(function() {
           dots: true
       });
     
+    
+      $('.speaking-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,    
+          autoplay: false,
+          infinite: true,
+          arrows: true,
+          dots: true,
+          prevArrow: $('.prev-logos'),
+          nextArrow: $('.next-logos') 
+      });
+    
+        $('.dud_img').parent().parent().addClass('dud_img_wrap');
 
 //        $(".set > a").on("click", function(e) {
 //              e.preventDefault();

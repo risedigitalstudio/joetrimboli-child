@@ -1,0 +1,46 @@
+.single-speaking-engagement-heading {
+    background: $lightGrey;
+    header {
+        margin-bottom: 55px;
+    }
+    header h1 {
+        text-align: center;
+    }
+    p.location {
+        text-align: center;
+        margin: 0;
+        i {
+            color: $pink;
+            margin-right: 6px;
+        }
+    }
+}
+.single-speaking-engagement {
+    background: $lightGrey;
+    text-align: center;
+    .video {
+        margin-top: 45px;
+    }
+}
+
+img.speaking-featured-img.wp-post-image {
+    margin: 0 auto 45px;
+    display: block;
+    width: 100%;
+}
+
+.carousel {
+    margin-top: 75px;
+}
+.carousel img {
+    display: block;
+    height: 400px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.speaker-pagination {
+    margin-top: 75px;
+    padding-top: 75px;
+    border-top: 1px solid $lightGrey;
+}

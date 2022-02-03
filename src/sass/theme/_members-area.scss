@@ -1,0 +1,16 @@
+.members-area {
+    text-align: center;
+    p {
+        margin-bottom: 0;
+    }
+    
+    .chunk {
+        padding-bottom: 65px;
+        margin-bottom: 65px;
+        border-bottom: 1px solid $lightGrey;
+        &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+}

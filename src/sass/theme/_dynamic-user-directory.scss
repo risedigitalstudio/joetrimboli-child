@@ -1,0 +1,34 @@
+.dud_img_wrap {
+    float: left;
+}
+
+img.dud_img {
+    width: 80px;
+    float: left;
+    border-radius: 6px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.fa-search:before {
+    content: "\f002";
+    color: $white;
+}
+
+#dud_user_srch_submit {
+    background: $pink none repeat scroll 0 0 !important;
+    border: 1px solid $pink !important;
+}
+
+.dir-listing-border-2 {
+    display: none;
+}
+
+.dir-listing {
+    margin: 7px 7px 10px 4px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid $lightGrey;
+    padding-bottom: 20px;
+} 
+

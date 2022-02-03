@@ -75,7 +75,7 @@ get_header();
                     <li>Every person who joins our incredible community is welcomed with open arms and can speak without fear, criticism or judgement.</li>
                 </ul>
                 <p><strong>We’re on this journey together.</strong></p>
-                <a href="<?php echo site_url();?>/join-now" class="default-btn">Wake Me Up</a>
+                <a href="<?php echo site_url();?>/plans/register" class="default-btn">Wake Me Up</a>
             </div>
         </div>
     </div>
@@ -189,7 +189,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p><a href="<?php echo site_url();?>/join-now" class="default-btn">Wake me up</a></p>
+                <p><a href="<?php echo site_url();?>/plans/register" class="default-btn">Wake me up</a></p>
             </div>
         </div>
     </div>

@@ -15013,6 +15013,10 @@ h4 {
   padding-bottom: 90px;
 }
 
+.sec-pad-top {
+  padding-top: 90px;
+}
+
 .sec-pad-bot {
   padding-bottom: 90px;
 }
@@ -15089,6 +15093,9 @@ h4 {
   text-decoration: none;
   background-color: #d3007d;
   border: 2px solid #d3007d;
+}
+.default-btn:disabled {
+  background-color: red;
 }
 
 .custom-logo-link {
@@ -15310,6 +15317,9 @@ h4 {
   text-decoration: none;
   background-color: #d3007d;
   border: 2px solid #d3007d;
+}
+.home-get-on-the-list #mc_embed_signup .button:disabled {
+  background-color: red;
 }
 .home-get-on-the-list #mc_embed_signup .button:hover {
   background-color: #ec008c !important;
@@ -15590,6 +15600,24 @@ span.next-wuc-testimonial.slick-arrow {
   line-height: 26px;
 }
 
+.plans-register {
+  text-align: center;
+  margin-top: 45px;
+}
+.plans-register h1 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.plans-register ul.checks {
+  font-size: 15px;
+  text-align: center;
+  list-style-position: inside;
+  margin-bottom: 40px;
+}
+.plans-register ul.checks li {
+  margin-bottom: 4px;
+}
+
 .mepr-price-boxes {
   display: flex;
   width: 100%;
@@ -15645,6 +15673,9 @@ span.next-wuc-testimonial.slick-arrow {
   background-color: #d3007d;
   border: 2px solid #d3007d;
 }
+.mepr-price-box-button a:disabled {
+  background-color: red;
+}
 
 .type-memberpressgroup h1 {
   text-align: center;
@@ -15678,6 +15709,9 @@ span.next-wuc-testimonial.slick-arrow {
   text-decoration: none;
   background-color: #d3007d;
   border: 2px solid #d3007d;
+}
+.mepr-submit:disabled {
+  background-color: red;
 }
 
 .mp_wrapper .mepr_price {
@@ -15776,6 +15810,9 @@ span.next-wuc-testimonial.slick-arrow {
   background-color: #d3007d;
   border: 2px solid #d3007d;
 }
+.button-primary:disabled {
+  background-color: red;
+}
 
 .mepr-login-actions a {
   font-size: 14px;
@@ -15841,6 +15878,209 @@ div#mepr-account-nav .mepr-nav-item.mepr-active-nav-tab {
   margin: 30px 0;
 }
 
+.members-area {
+  text-align: center;
+}
+.members-area p {
+  margin-bottom: 0;
+}
+.members-area .chunk {
+  padding-bottom: 65px;
+  margin-bottom: 65px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.members-area .chunk:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.dud_img_wrap {
+  float: left;
+}
+
+img.dud_img {
+  width: 80px;
+  float: left;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: inline;
+}
+
+.fa-search:before {
+  content: "\f002";
+  color: #fff;
+}
+
+#dud_user_srch_submit {
+  background: #ec008c none repeat scroll 0 0 !important;
+  border: 1px solid #ec008c !important;
+}
+
+.dir-listing-border-2 {
+  display: none;
+}
+
+.dir-listing {
+  margin: 7px 7px 10px 4px;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 20px;
+}
+
+.speaking-engagements-archive {
+  background: #e7e7e7;
+}
+.speaking-engagements-archive .page-header {
+  margin-bottom: 45px;
+}
+
+.single-engagement {
+  background: #fff;
+  padding: 45px;
+  margin-bottom: 30px;
+}
+.single-engagement p.btn-wrap {
+  margin-top: 18px;
+}
+
+.logo-wrap p {
+  text-align: center;
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+
+.speaking-logos .slick-track {
+  margin-bottom: 30px;
+}
+.speaking-logos img {
+  max-height: 120px;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.arrows-speaking-logos {
+  margin-top: 30px;
+  position: relative;
+  top: -160px;
+}
+.arrows-speaking-logos .arrows-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.arrows-speaking-logos .arrows-inner .prev-logos {
+  position: relative;
+  left: -25px;
+}
+.arrows-speaking-logos .arrows-inner .next-logos {
+  position: relative;
+  right: -25px;
+}
+
+.book-joe {
+  text-align: center;
+}
+.book-joe .wpcf7 {
+  max-width: 100%;
+  margin-top: 50px !important;
+}
+.book-joe .wpcf7-form-control-wrap {
+  margin-bottom: 15px;
+  display: block;
+}
+.book-joe .wpcf7-form-control-wrap.message {
+  margin-bottom: 0;
+}
+
+.btn-outline-primary, .wpcf7 input[type=submit] {
+  background-color: none;
+  padding: 10px 18px;
+  display: inline-block;
+  transition: 0.2s all;
+  border: 2px solid #ec008c;
+  color: #ec008c;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: normal;
+  width: 180px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .btn-outline-primary, .wpcf7 input[type=submit] {
+    padding: 6px 13px;
+    font-size: 16px;
+  }
+}
+.btn-outline-primary:hover, .wpcf7 input[type=submit]:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d3007d;
+  border: 2px solid #d3007d;
+}
+.btn-outline-primary:disabled, .wpcf7 input[type=submit]:disabled {
+  background-color: red;
+}
+
+.wpcf7 input[type=submit]:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  margin: 15px 0 0 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 0;
+  width: 100%;
+}
+
+.single-speaking-engagement-heading {
+  background: #e7e7e7;
+}
+.single-speaking-engagement-heading header {
+  margin-bottom: 55px;
+}
+.single-speaking-engagement-heading header h1 {
+  text-align: center;
+}
+.single-speaking-engagement-heading p.location {
+  text-align: center;
+  margin: 0;
+}
+.single-speaking-engagement-heading p.location i {
+  color: #ec008c;
+  margin-right: 6px;
+}
+
+.single-speaking-engagement {
+  background: #e7e7e7;
+  text-align: center;
+}
+.single-speaking-engagement .video {
+  margin-top: 45px;
+}
+
+img.speaking-featured-img.wp-post-image {
+  margin: 0 auto 45px;
+  display: block;
+  width: 100%;
+}
+
+.carousel {
+  margin-top: 75px;
+}
+
+.carousel img {
+  display: block;
+  height: 400px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.speaker-pagination {
+  margin-top: 75px;
+  padding-top: 75px;
+  border-top: 1px solid #e7e7e7;
+}
+
 .main-footer {
   background: #e7e7e7;
 }
@@ -15852,7 +16092,7 @@ div#mepr-account-nav .mepr-nav-item.mepr-active-nav-tab {
 .footer-social {
   list-style-type: none;
   padding: 0;
-  width: 200px;
+  width: 230px;
   display: block;
   float: right;
 }

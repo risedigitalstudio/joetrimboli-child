@@ -1,3 +1,21 @@
+.plans-register {
+    text-align: center;
+    margin-top: 45px;
+    h1 {
+        text-align: center;
+        margin-bottom: 45px; 
+    }
+    ul.checks {
+        font-size: 15px;
+//        font-weight: 600;
+        text-align: center;
+        list-style-position: inside;
+        margin-bottom: 40px;
+        li {
+            margin-bottom: 4px;
+        }
+    }
+}
 .mepr-price-boxes {
     display: flex;
     width: 100%;
