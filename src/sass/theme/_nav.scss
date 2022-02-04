@@ -5,6 +5,10 @@
     }
 }
 
+.navbar-toggler-icon .close {
+    display: none;
+}
+
 .navbar-expand-md .navbar-nav .menu-item {
     padding: 0.5rem 1rem;
 }
@@ -57,5 +61,82 @@
     &:hover {
         border-bottom: none;
         background-color: darken($pink, 10%);
+    }
+}
+
+
+
+@include media-breakpoint-down(lg) {
+    .custom-logo-link {
+        width: 110px;
+    }
+    .navbar-expand-md .navbar-nav .menu-item {
+        padding: 0.5rem 0.4rem;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 11px;
+    }
+    
+    .navbar-expand-md .navbar-nav .login-btn .nav-link, .navbar-expand-md .navbar-nav .register-btn .nav-link {
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .menu-item {
+        padding: 0.5rem 0.4rem;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        font-size: 10px;
+    }
+    .navbar-expand-md .navbar-nav .login-btn .nav-link, .navbar-expand-md .navbar-nav .register-btn .nav-link {
+        width: auto;
+        padding: 10px 14px !important;
+        font-size: 10px;
+    }
+    .dropdown-item {
+        font-size: 10px;
+    }
+    .navbar>.container-fluid {
+        display: block;
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            width: 100%;
+            float: left;
+            border-bottom: 1px solid $lightGrey;
+            padding-bottom: 20px;
+        }
+        #navbarNavDropdown {
+            display: block;
+            width: 100%;
+            float: left;
+            .ml-auto {
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        border-bottom: none;
+        &:hover {
+            border-bottom: none;
+            color: $pink;
+        }
+    }
+    .navbar-expand-md .navbar-nav .current_page_item .nav-link {
+        border-bottom: none;
+        color: $pink;
+    } 
+    .navbar-expand-md .navbar-nav .menu-item {
+        padding: 4px 3px;
+    }
+    .navbar-expand-md .navbar-nav .login-btn .nav-link, .navbar-expand-md .navbar-nav .register-btn .nav-link  {
+        width: 100%; 
     }
 }

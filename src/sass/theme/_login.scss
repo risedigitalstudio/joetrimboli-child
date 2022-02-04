@@ -10,6 +10,9 @@
         background: $white;
         padding: 40px;
     }
+    @include media-breakpoint-down(md) {
+        background-position: -50px center;
+    }
 }
 
 .button-primary {

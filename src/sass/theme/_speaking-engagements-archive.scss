@@ -83,3 +83,14 @@
 }
 
 
+@include media-breakpoint-down(md) {
+    .arrows-speaking-logos {
+        margin-top: 30px;
+        position: relative;
+        top: auto;
+    }
+    .arrows-speaking-logos .arrows-inner {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -44,3 +44,17 @@ img.speaking-featured-img.wp-post-image {
     padding-top: 75px;
     border-top: 1px solid $lightGrey;
 }
+
+
+@include media-breakpoint-down(sm) {
+    .single-engagement {
+        padding: 25px;
+        margin: 0 0 30px;
+        .col-md-5, .col-md-7 {
+            padding: 0 0 0 0 !important;
+        }
+        img {
+            margin-bottom: 15px;
+        }
+    }
+}

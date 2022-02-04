@@ -23,7 +23,7 @@ get_header();
 <section class="about-hero">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
                 <h1>Here's my story.</h1>
             </div>
         </div>

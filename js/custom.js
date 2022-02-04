@@ -2,6 +2,19 @@ $ = jQuery;
 
 $(document).ready(function() {
     
+    
+    $('.navbar-toggler').on('click', function() {
+        $('#navbarNavDropdown').toggleClass('collapse');
+        if ($('#navbarNavDropdown').hasClass('collapse')) {
+            $('.navbar-toggler-icon .bars').show();
+            $('.navbar-toggler-icon .close').hide();
+        } else {
+            $('.navbar-toggler-icon .bars').hide();
+            $('.navbar-toggler-icon .close').show();
+        }
+    })
+    
+    
       $('.home-video-slider').slick({
           slidesToShow: 3,
           slidesToScroll: 1,    
@@ -9,7 +22,27 @@ $(document).ready(function() {
           infinite: true,
           arrows: true,
           prevArrow: $('.prev-videos'),
-          nextArrow: $('.next-videos') 
+          nextArrow: $('.next-videos'),
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            }
+          ]
       });
         
       $('.wuc-testimonial-slider').slick({
@@ -32,7 +65,27 @@ $(document).ready(function() {
           arrows: true,
           dots: true,
           prevArrow: $('.prev-logos'),
-          nextArrow: $('.next-logos') 
+          nextArrow: $('.next-logos'),
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            }
+          ]
       });
     
         $('.dud_img').parent().parent().addClass('dud_img_wrap');

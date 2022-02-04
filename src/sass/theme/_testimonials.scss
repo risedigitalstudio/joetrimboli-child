@@ -8,6 +8,9 @@
     h1 {
         color: $white;
     }
+    @include media-breakpoint-down(lg) {
+        height: 600px;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -15,6 +18,14 @@
         width: 100%;
         background: rgb(0,93,160);
         background: linear-gradient(297deg, rgba(0,93,160,0) 19%, rgba(0,0,0,0.82) 100%);
+    }
+    
+    @include media-breakpoint-down(sm) {
+        height: 440px;
+        background-position: -340px center;
+        h1 {
+            font-size: 50px;
+        }
     }
 }
 
@@ -55,4 +66,11 @@
     line-height: 50px;
     margin-bottom: 30px;
     font-size: 1.5rem;
+}
+
+@include media-breakpoint-down(md) {
+    .testimonial-quote {
+        bottom: 10px;
+        right: 10px;
+    }
 }

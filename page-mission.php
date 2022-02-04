@@ -21,7 +21,7 @@ get_header();
 <section class="mission-hero">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
                <h1>Mission/<br>Vision</h1>
             </div>
         </div>

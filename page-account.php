@@ -13,8 +13,10 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-5 offset-md-7">
-                <img src="<?php echo get_stylesheet_directory_uri();?>/img/wake-up-call-logo-blk.png" class="account-logo">
-                <h2>Member Dashboard</h2>
+               <div class="account-hero-inner">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/wake-up-call-logo-blk.png" class="account-logo">
+                    <h2>Member Dashboard</h2>
+                </div>
             </div>
         </div>
     </div>

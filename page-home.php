@@ -116,7 +116,7 @@ get_header();
 <section class="home-events sec-pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-6">
+            <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-4">
                 <div class="home-cta-inner">
                     <h2>Events</h2>
                     <p>Interested in recent or upcoming events?<br class="desktop">Find out if Joe’s coming to a location near you.</p>
@@ -133,7 +133,7 @@ get_header();
 <section class="home-get-on-the-list sec-pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                 <?php get_template_part( 'global-templates/mailchimp-sign-up' ); ?>
             </div>
         </div>

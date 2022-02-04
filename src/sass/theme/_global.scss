@@ -88,3 +88,43 @@ h4 { font-size: 2rem; }
         margin: 0;
     }
 }
+
+@include media-breakpoint-down(md) {
+    .sec-pad {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .sec-pad-top {
+        padding-top: 75px;
+    }
+    .sec-pad-bot {
+        padding-bottom: 75px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .sec-pad {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sec-pad-top {
+        padding-top: 50px;
+    }
+    .sec-pad-bot {
+        padding-bottom: 50px;
+    }
+    
+    h1 { font-size: 2.5rem; }
+    h2 { 
+        font-size: 2rem; 
+        margin-bottom: 1rem;
+    }
+    h3 { 
+        font-size: 1.5rem; 
+        line-height: 2rem;
+    }
+    h4 { 
+        font-size: 1.5rem; 
+        line-height: 2rem;
+    }
+}

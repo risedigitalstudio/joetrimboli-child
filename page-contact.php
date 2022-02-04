@@ -21,7 +21,7 @@ get_header();
 <section class="contact-hero">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6">
                <h1>Contact</h1>
             </div>
         </div>
@@ -31,8 +31,8 @@ get_header();
 <section class="contact-wrap sec-pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 offset-md-1">
-                <div class="flex-height">
+            <div class="col-lg-4 offset-lg-1 col-md-12">
+                <div class="flex-height contact-info-wrap">
                    <p><i class="fa fa-envelope"></i><a href="mailto:info@joetrimboli.com">info@joetrimboli.com</a></p>
                     <ul class="contact-social">
                         <li><a href="https://www.instagram.com/5am_wakeupcall/" target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -42,7 +42,7 @@ get_header();
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12">
                 <?php echo do_shortcode('[contact-form-7 id="138" title="Contact Us"]');?>
             </div>
         </div>

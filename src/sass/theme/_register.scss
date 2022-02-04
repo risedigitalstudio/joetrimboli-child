@@ -22,7 +22,7 @@
     justify-content: space-between;
 }
 
-.mepr-price-box  {
+.mepr-price-box {
     background: $lightGrey;
     width: 32%;
     padding: 40px;
@@ -52,5 +52,16 @@
     h1 {
         text-align: center;
         margin-bottom: 45px;
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    .mepr-price-boxes {
+        display: block;
+    }
+    .mepr-price-box {
+        margin-bottom: 15px;
+        width: 100%;
     }
 }

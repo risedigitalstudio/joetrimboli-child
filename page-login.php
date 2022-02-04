@@ -20,7 +20,7 @@ get_header();
 <section class="login-bg sec-pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-lg-5 col-md-7">
 				<?php
 				while ( have_posts() ) {
 					the_post();

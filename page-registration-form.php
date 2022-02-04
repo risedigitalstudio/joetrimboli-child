@@ -11,7 +11,7 @@ get_header();
 <section class="registration-bg sec-pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-7 col-md-12">
 				<?php
 				while ( have_posts() ) {
 					the_post();

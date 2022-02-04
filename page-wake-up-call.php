@@ -22,8 +22,10 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-5 offset-md-7">
-               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wake-up-call-logo-blk.png" class="wuc-logo">
-               <p class="wuc-tagline">Set your alarm, life is about to change</p>
+                <div class="wuc-hero-inner">
+                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wake-up-call-logo-blk.png" class="wuc-logo">
+                   <p class="wuc-tagline">Set your alarm, life is about to change</p>
+                </div>
             </div>
         </div>
     </div>

@@ -16,7 +16,10 @@
     background-size: cover;
     background-position: center center;
     @include media-breakpoint-down(lg) {
-        background-position: center center;
+        background-position: -1010px center;
+    }
+    @include media-breakpoint-down(md) {
+        background: $black;
     }
     h1 {
         font-size: 2.1rem;

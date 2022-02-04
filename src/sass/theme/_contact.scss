@@ -8,6 +8,15 @@
         color: $white;
         font-size: 80px;
     }
+    @include media-breakpoint-down(lg) {
+        background-position: center center;
+    }
+    @include media-breakpoint-down(md) {
+        height: 440px;
+        h1 {
+            font-size: 50px;
+        }
+    }
 }
 
 .contact-wrap {
@@ -36,6 +45,17 @@
                     color: $pink;
                 }
             }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .contact-info-wrap {
+        text-align: center;
+        margin-bottom: 50px;
+        .contact-social {
+            display: flex;
+            justify-content: center;
         }
     }
 }

@@ -4,7 +4,9 @@
     background-position: center center;
     @include flex-height;
     height: 720px;
-    
+    @include media-breakpoint-down(lg) {
+        height: 600px;
+    }
     .wuc-tagline {
         display: block;
         text-align: center;
@@ -14,6 +16,30 @@
         text-transform: uppercase;
         letter-spacing: .4px;
         font-weight: 500;
+    }
+    @include media-breakpoint-down(md) {
+        height: 440px;
+        background-position: -60px center;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(0,93,160);
+            background: linear-gradient(184deg, rgba(0,93,160,0) 46%, rgba(255,255,255,0.77) 100%);
+        }
+        h1 {
+            font-size: 50px;
+        }
+        img.wuc-logo {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+        .wuc-hero-inner {
+            margin-top: 175px;
+        }
     }
 }
 
@@ -112,3 +138,58 @@ span.next-wuc-testimonial.slick-arrow {
         margin: 0 auto;
     }
 }
+
+
+@include media-breakpoint-down(lg) {
+    .wuc-testimonial .testimonial-info {
+        text-align: left;
+        width: 419px;
+        float: right;
+    }
+}
+
+
+
+@include media-breakpoint-down(md) {
+    .wuc-testimonial .testimonial-info {
+        text-align: left;
+        width: auto;
+        float: left;
+    }
+    .arrows-wuc-testimonials {
+        top: auto;
+    }
+    .arrows-wuc-testimonials .arrows-inner {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 30px;
+    }
+    
+    span.prev-wuc-testimonial.slick-arrow {
+        position: relative;
+        left: -10px;
+    }
+
+    span.next-wuc-testimonial.slick-arrow {
+        position: relative;
+        right: -10px;
+    }
+    .wuc-intro ul:first-of-type {
+        padding-left: 40px;
+    }
+    .wuc-desc {
+        text-align: center;
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .wuc-testimonial img.wuc-testimonial-img {
+        float: none;
+        width: 150px;
+        margin: 0 auto 30px;
+    }
+    .wuc-testimonial .testimonial-info {
+        text-align: center;
+    }
+}
+

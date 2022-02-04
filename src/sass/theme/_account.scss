@@ -19,6 +19,31 @@
     @include media-breakpoint-down(lg) {
         background-position: center center;
     }
+    
+    @include media-breakpoint-down(md) {
+        min-height: 440px;
+        background-position: -60px center;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(0,93,160);
+            background: linear-gradient(184deg, rgba(0,93,160,0) 46%, rgba(255,255,255,0.77) 100%);
+        }
+        h1 {
+            font-size: 50px;
+        }
+        img.wuc-logo {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+        .account-hero-inner {
+            margin-top: 175px;
+        }
+    }
 }
 
 
@@ -52,4 +77,41 @@ div#mepr-account-nav {
 #mepr-account-welcome-message p {
     font-weight: 600;
     margin: 30px 0;
+}
+
+
+@include media-breakpoint-down(md) {
+    div#mepr-account-nav {
+        display: flex;
+    }
+    div#mepr-account-nav .mepr-nav-item {
+        padding: 0 9px;
+    }
+    div#mepr-account-nav .mepr-nav-item a {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .account-wrap .mp_wrapper:first-of-type {
+        height: 140px;
+    }
+    div#mepr-account-nav {
+        display: block;
+        height: 100px;
+    }
+    div#mepr-account-nav .mepr-nav-item {
+        padding: 0 9px;
+        display: flex !important;
+        width: 33.3%;
+        float: left;
+        border: 1px solid darken($pink, 10%);
+        height: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    div#mepr-account-nav .mepr-nav-item a {
+        font-size: 11px;
+        line-height: 11px;
+    }
 }
