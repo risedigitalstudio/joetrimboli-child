@@ -1,0 +1,41 @@
+.contact-hero {
+    background-image: url(../img/joe-mission.jpeg);
+    background-size: cover;
+    background-position: center -100px;
+    @include flex-height;
+    height: 600px;
+    h1 {
+        color: $white;
+        font-size: 80px;
+    }
+}
+
+.contact-wrap {
+    p i {
+        margin-right: 6px;
+    }
+}
+.contact-social {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    float: left;
+    li {
+        float: left;
+        &:first-of-type a i {
+            margin: 0 15px 0 0;
+        }
+        a {
+            i {
+                color: $black;
+                font-size: 25px;
+                margin: 0 15px;
+            }
+            &:hover {
+                i {
+                    color: $pink;
+                }
+            }
+        }
+    }
+}

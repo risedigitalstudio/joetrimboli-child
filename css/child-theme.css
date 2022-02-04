@@ -15067,6 +15067,13 @@ h4 {
   margin: 0;
 }
 
+.flex-height {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
 .default-btn {
   background-color: none;
   padding: 10px 18px;
@@ -15121,6 +15128,15 @@ h4 {
 }
 .navbar-expand-md .navbar-nav .nav-link:hover {
   border-bottom: 2px solid #ec008c;
+}
+
+.dropdown-item {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  font-weight: 500;
 }
 
 .navbar-expand-md .navbar-nav .current_page_item .nav-link {
@@ -15187,6 +15203,22 @@ h4 {
 .home-hero .home-hero-inner img.hello {
   width: 300px;
   margin: 15px 0 30px;
+}
+
+.circle {
+  width: 490px;
+  height: 490px;
+  background: #e7e7e7;
+  border-radius: 100%;
+  position: absolute;
+  top: 9%;
+  left: -6%;
+  z-index: 0;
+}
+
+.home-intro-content {
+  z-index: 1;
+  position: relative;
 }
 
 .blk-sep {
@@ -15981,14 +16013,18 @@ img.dud_img {
   text-align: center;
 }
 .book-joe .wpcf7 {
-  max-width: 100%;
   margin-top: 50px !important;
 }
-.book-joe .wpcf7-form-control-wrap {
+
+.wpcf7 {
+  max-width: 100%;
+}
+
+.wpcf7-form-control-wrap {
   margin-bottom: 15px;
   display: block;
 }
-.book-joe .wpcf7-form-control-wrap.message {
+.wpcf7-form-control-wrap.message {
   margin-bottom: 0;
 }
 
@@ -16079,6 +16115,46 @@ img.speaking-featured-img.wp-post-image {
   margin-top: 75px;
   padding-top: 75px;
   border-top: 1px solid #e7e7e7;
+}
+
+.contact-hero {
+  background-image: url(../img/joe-mission.jpeg);
+  background-size: cover;
+  background-position: center -100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  height: 600px;
+}
+.contact-hero h1 {
+  color: #fff;
+  font-size: 80px;
+}
+
+.contact-wrap p i {
+  margin-right: 6px;
+}
+
+.contact-social {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+  float: left;
+}
+.contact-social li {
+  float: left;
+}
+.contact-social li:first-of-type a i {
+  margin: 0 15px 0 0;
+}
+.contact-social li a i {
+  color: #000;
+  font-size: 25px;
+  margin: 0 15px;
+}
+.contact-social li a:hover i {
+  color: #ec008c;
 }
 
 .main-footer {

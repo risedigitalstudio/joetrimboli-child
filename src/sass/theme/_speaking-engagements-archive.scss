@@ -53,17 +53,19 @@
 
 .book-joe {
     text-align: center;
-
     .wpcf7 {
-        max-width: 100%;
         margin-top: 50px !important;
     }
-    .wpcf7-form-control-wrap {
-        margin-bottom: 15px;
-        display: block;
-        &.message {
-            margin-bottom: 0;
-        }
+}
+
+.wpcf7 {
+    max-width: 100%;
+}
+.wpcf7-form-control-wrap {
+    margin-bottom: 15px;
+    display: block;
+    &.message {
+        margin-bottom: 0;
     }
 }
 

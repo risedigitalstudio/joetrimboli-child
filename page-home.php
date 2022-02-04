@@ -39,6 +39,8 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-10 offset-md-1">
+               <div class="circle"></div>
+               <div class="home-intro-content">
                 <h3>Thoughts cause your feelings.<br>Feelings cause your actions.<br>Actions cause your results.</h3>
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/left-quote.png" class="quote quote-left">
                 <h1>Master this,<br>master your life!</h1>
@@ -85,6 +87,7 @@ get_header();
                 <p>And that’s exactly what I’m doing…</p>
                 
                 <p><a href="<?php echo site_url();?>/about-joe" class="default-btn">Joe's Story</a></p>
+                </div><!-- end home-intro-content -->
             </div>
         </div>
     </div>
@@ -102,7 +105,7 @@ get_header();
                 <p>Looking for an inspirational speaker at your next conference or event? Arm your team with powerful workshops, professional development tools and breakout sessions to improve work ethic and habits. Book Joe for your next digital or in-person event.</p>
                 <div class="btn-wrap">
                     <a href="<?php echo site_url();?>/speaking-engagements" class="default-btn">Learn More</a>
-                    <a href="mailto:lori@joetrimboli.com" class="default-btn">Book Now</a>
+                    <a href="mailto:lori@joetrimboli.com" target="_blank" class="default-btn">Book Now</a>
                 </div>
             </div>
         </div>
