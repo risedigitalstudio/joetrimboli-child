@@ -15081,7 +15081,23 @@ h4 {
     padding-bottom: 75px;
   }
 }
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 @media (max-width: 767.98px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
   .sec-pad {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -16034,6 +16050,11 @@ span.next-wuc-testimonial.slick-arrow {
 .plans-register ul.checks li {
   margin-bottom: 4px;
 }
+@media (max-width: 767.98px) {
+  .plans-register ul.checks {
+    padding-left: 0 !important;
+  }
+}
 
 .mepr-price-boxes {
   display: flex;
@@ -16568,6 +16589,11 @@ img.speaking-featured-img.wp-post-image {
   width: auto;
   margin-right: 10px;
 }
+@media (max-width: 767.98px) {
+  .carousel img {
+    height: 240px;
+  }
+}
 
 .speaker-pagination {
   margin-top: 75px;
@@ -16675,6 +16701,16 @@ img.speaking-featured-img.wp-post-image {
 }
 .footer-social li a:hover i {
   color: #ec008c;
+}
+
+.four04 {
+  text-align: center;
+}
+.four04 h1 {
+  font-size: 10rem;
+}
+.four04 p {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

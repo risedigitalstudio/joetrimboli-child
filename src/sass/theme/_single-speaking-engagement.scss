@@ -37,6 +37,9 @@ img.speaking-featured-img.wp-post-image {
     height: 400px;
     width: auto;
     margin-right: 10px;
+    @include media-breakpoint-down(sm) {
+        height: 240px;
+    }
 }
 
 .speaker-pagination {
