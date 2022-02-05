@@ -11,12 +11,13 @@
             margin: 15px 0 30px;
         }
     }
+
     @include media-breakpoint-down(md) {
         background-position: -150px center;
     }
     @include media-breakpoint-down(sm) {
         background-image: url(../img/home-hero-mob.jpg);
-        height: 630px;
+        height: 500px;
         background-position: center center;
         position: relative;
         &::before {
@@ -175,8 +176,22 @@
     }
 }
 
+.home-desktop { display: block; }
+.home-mob { display: none; }
 
 @include media-breakpoint-down(sm) {
+    
+    .home-desktop { display: none; }
+    .home-mob { display: block; }
+    
+    .hello {
+        margin-bottom: 6px;
+    }
+    
+    .home-hero .home-hero-inner h1 {
+        margin-bottom: 6px;
+    }
+
     .home-hero .home-hero-inner img.hello {
         width: 190px;
         margin: 0 0 20px;

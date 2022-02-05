@@ -2,6 +2,23 @@ $ = jQuery;
 
 $(document).ready(function() {
     
+
+    //    scroll intent nav
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+       var theTop = $(this).scrollTop();
+        if (theTop > 200) {
+       if (theTop > lastScrollTop){
+           //downscroll
+           $('header#wrapper-navbar').addClass('neg-margin');
+       } else {
+          // upscrol
+          $('header#wrapper-navbar').removeClass('neg-margin');
+       }
+       lastScrollTop = theTop;
+        } 
+    });
+    
     
     $('.navbar-toggler').on('click', function() {
         $('#navbarNavDropdown').toggleClass('collapse');

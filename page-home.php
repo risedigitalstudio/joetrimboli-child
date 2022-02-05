@@ -23,9 +23,9 @@ get_header();
         <div class="row">
             <div class="col-md-5 offset-md-7">
                 <div class="flex-height home-hero-inner">
-                    <p>Hello, I’m</p>
-<!--                    <h1>Joe Trimboli</h1>-->
-                   <div class="full">
+                    <p class="hello">Hello, I’m</p>
+                    <h1 class="home-mob">Joe Trimboli</h1>
+                   <div class="full home-desktop">
                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jt-logo-white.png" class="hello">
                    </div>
                     <p>Mindset coach, Speaker and founder of The <strong>Wake&nbsp;Up&nbsp;Call&trade;</strong> who’s on a mission to wake people up and change how the world thinks.</p>
